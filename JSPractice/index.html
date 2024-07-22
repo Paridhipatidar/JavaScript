@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       body p{
+        background-color: black;
+        font-size: 300%;
+        font-family: cursive;
+        margin: 3px;
+        padding:4px;
+        text-align: center;
+       }
+       .b0{
+        color: orange;
+       }
+       .b1{
+           color: rgb(34, 223, 166);
+       }
+       .b2{
+           color: white;
+       }
+       .bt1{
+        background-color: rgb(135, 248, 169);   
+        border: none;
+        font-size: 16px;
+        padding:9px 30px;
+        margin: 9px;
+        border-radius: 11px;
+       }
+
+       .bt2{
+          padding: 9px 70px;
+          border-radius: 11px;
+          font-size: 16px;
+        }
+        .bt3{
+           
+            background-color: rgb(135, 248, 169);   
+        border: none;
+        font-size: 16px;
+        padding:9px 30px;
+        margin: 9px;
+        border-radius: 11px;
+        }
+    </style>
+</head>
+<body>
+ <p> <span class="b0">22.</span> <span class="b1">Myntra Bag </span><span class="b2">Exercise</span></p>
+
+ <button class="bt1" onclick="cartQuantity++;document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`">Add to Bag</button>
+
+
+ <button class="bt2" onclick="cartQuantity--; document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`">MOVE TO WISHLIST</button>
+
+
+ <button class="bt3" onclick="cartQuantity=cartQuantity+2;document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`;">Add 1+1 sale item</button>
+
+ 
+ <h1 id="cart-summary"></h1>
+</body>
+<script>
+    let cartQuantity=0;
+    document.querySelector('#cart-summary').innerHTML=`Your Bag has ${cartQuantity} items`;
+</script>
+</html>
