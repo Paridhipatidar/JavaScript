@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arraymethods</title>
+</head>
+<body>
+   <p class="arr"></p> 
+</body>
+<script>
+    //  push/pop
+    let Array=[1,"paridhi",'heyy',{name:'paridhi'}];
+    Array.pop();//delete from end 
+    Array.push('hello');//add to end
+ 
+    // shift/unshift
+    Array.shift();//delete form begin
+    
+    Array.unshift('hey');//add to begin
+    console.log(Array);
+    // toString: remove [] from array and print like string on console
+    ary=Array.toString(); //change is not permanent
+    console.log(ary);
+
+    // sort
+    Array.sort();
+    
+    // valueOf- get array itself on console
+   
+    console.log( Array.valueOf());
+
+    // splice
+    Array.splice(1,'','i','j'); //add these elements to array from position 1
+    Array.splice(0,2);
+    //delete elements from array starting from 0 and 2 ele
+    document.querySelector('.arr').innerHTML=Array;
+</script>
+</html>
