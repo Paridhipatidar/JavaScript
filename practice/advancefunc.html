@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Button1{
+           margin :2px;
+           padding: 4px;
+           width: 80px;
+           background-color: rgb(231, 141, 186);
+           border-radius: none;
+        }
+        .js-Button{
+           transform: scale(2);
+           background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<button class="Button1" onclick="setTimeout(func,2000);">
+Hey
+</button>
+
+    <script>
+        // Que1
+        // let multiply= (num1,num2)=> {return num1*num2;}
+        // console.log(multiply(4,2));
+        
+
+        //  Que2
+        // let fun = ()=> console.log('heyyy');
+        // let runTwice=inputfun=>{
+        //     inputfun();
+        //     inputfun();
+            
+        // }
+        // runTwice(fun);
+
+
+        // Que3
+       function func(){
+         document.querySelector('.Button1').classList.add('js-Button');
+       }
+       
+
+
+    </script>
+</body>
+</html>
