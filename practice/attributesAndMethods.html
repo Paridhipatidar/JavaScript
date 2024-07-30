@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hey {
+        background-color: rgb(231, 28, 28);
+        font-size: 100px;
+        margin: 100px;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hey" id="first" data-game="tic-tac-toe" data-player="paridhi">hello
+    </div>
+<div id="div">
+  div
+</div>
+  </body>
+  <script>
+
+// div.insertAdjacentHTML('beforebegin','hello');
+// div.insertAdjacentHTML('afterend','bye');
+
+    // let first = document.getElementById("first");
+    // let a = first.getAttribute("class");
+    // console.log(a);
+
+    // console.log(first.hasAttribute("class"));
+    // console.log(first.hasAttribute("style"));
+
+    // // first.setAttribute("hidden", "true");
+
+    // // first.removeAttribute("class");
+
+    // console.log(first.attributes);
+    // console.log(first.dataset.player);
+
+// let div=document.createElement('div');
+// div.innerHTML="<span>Heyyy<span>";
+    
+//     setTimeout(()=>{ document.body.append(div); first.replaceWith(div)},2000);
+// first.remove();
+
+first.classList.add("class");
+first.classList.toggle("class");
+first.classList.contains("class");
+
+  
+  </script>
+</html>
